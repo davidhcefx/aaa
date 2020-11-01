@@ -1,7 +1,5 @@
 # aaa
 
-<details>
-<summary>Click me</summary>
-
-👻
-</details>
+```zsh
+$ file helloctf
+```
