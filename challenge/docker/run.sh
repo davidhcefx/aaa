@@ -1,7 +1,7 @@
 #! /bin/bash
 
 name="constr"
-port="80:8787"
+ports="80:8787"
 
 # copy binary
 cp ../$name share/$name
@@ -13,5 +13,7 @@ docker build . -t $name
 docker run -d --name $name \
     --volume $PWD/share/:/home/$name:ro \
     --volume $PWD/xinetd:/etc/xinetd.d/$name:ro \
-    -p $port \
+    -p $ports \
     $name
+
+echo "done"
