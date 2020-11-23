@@ -1,0 +1,10 @@
+version: '3'
+services:
+    constr:
+        container_name: constr
+        build: .
+        volumes:
+            - ./share/:/home/constr:ro
+            - ./xinetd:/etc/xinetd.d/constr:ro
+        ports:
+            - "10001:8787"
