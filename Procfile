@@ -1,1 +1,1 @@
-web: cd CTFd; docker-compose up
+web: cd CTFd; ls -al # docker-compose up
