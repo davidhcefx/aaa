@@ -4,6 +4,8 @@ name="constr"
 ports="80:80"
 
 
+ls /app/vendor/docker
+ls /app/vendor/docker/docker
 /app/vendor/docker/docker/dockerd -H fd:// --containerd=/run/containerd/containerd.sock &
 
 # copy binary
