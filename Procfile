@@ -1,1 +1,1 @@
-web: cd CTFd; ls -al # docker-compose up
+work: ./run_all.sh
