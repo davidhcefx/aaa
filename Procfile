@@ -1,1 +1,1 @@
-work: ./run_all.sh
+work: cd challenge; ./run.sh
