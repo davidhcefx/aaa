@@ -5,7 +5,7 @@ service constr
     wait = no
     server = /home/constr/constr
     user = constr
-    port = 8787
+    port = 80
     socket_type = stream
     protocol = tcp
     flags = REUSE
