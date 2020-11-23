@@ -1,17 +1,17 @@
 #! /bin/bash
 
-NAME="constr"
-PORT="80:8787"
+name="constr"
+port="80:8787"
 
 # copy binary
-cp ../$NAME share/$NAME
+cp ../$name share/$name
 
 # build
-docker build . -t $NAME
+docker build . -t $name
 
 # run
-docker run -d --name $NAME \
-    --volume $PWD/share/:/home/$NAME:ro \
-    --volume $PWD/xinetd:/etc/xinetd.d/$NAME:ro \
-    -p $PORT \
-    $NAME
+docker run -d --name $name \
+    --volume $PWD/share/:/home/$name:ro \
+    --volume $PWD/xinetd:/etc/xinetd.d/$name:ro \
+    -p $port \
+    $name
