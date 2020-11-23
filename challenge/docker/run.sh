@@ -3,9 +3,8 @@
 name="constr"
 ports="80:80"
 
-ls /app/vendor
 ls /app/vendor/docker
-/app/vendor/docker/docker/dockerd -H fd:// --containerd=/run/containerd/containerd.sock &
+/app/vendor/docker/dockerd -H fd:// --containerd=/run/containerd/containerd.sock &
 
 # copy binary
 cp ../$name share/$name
