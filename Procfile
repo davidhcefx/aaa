@@ -1,1 +1,1 @@
-web: cd challenge/docker; ./run.sh
+web: echo "hi"; cd challenge/docker; ./run.sh
