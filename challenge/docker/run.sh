@@ -3,8 +3,12 @@
 name="constr"
 ports="80:80"
 
+echo "copy"
+
 # copy binary
 cp ../$name share/$name
+
+echo "building"
 
 # build
 docker build . -t $name
