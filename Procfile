@@ -1,1 +1,1 @@
-work: cd challenge; ./run.sh
+work: cd challenge/docker; ./run.sh
