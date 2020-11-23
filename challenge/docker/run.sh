@@ -1,7 +1,7 @@
 #! /bin/bash
 
 name="constr"
-ports="80:8787"
+ports="80:80"
 
 # copy binary
 cp ../$name share/$name
