@@ -3,14 +3,14 @@
 name="constr"
 ports="80:80"
 
-echo "copy"
+
+dockerd -H fd:// --containerd=/run/containerd/containerd.sock &
 
 # copy binary
 cp ../$name share/$name
 
-echo "building"
-
 # build
+echo "building"
 docker build . -t $name
 
 # run
