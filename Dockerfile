@@ -4,8 +4,7 @@ run apt-get -y upgrade
 run apt-get -y install xinetd
 
 run useradd -m constr
-add ../constr /home/constr/
-#add share/* /home/constr/
+add share/* /home/constr/
 add xinetd /etc/xinetd.d/
 
 user constr
