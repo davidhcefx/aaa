@@ -5,5 +5,6 @@ server=/home/user/constr
 
 mkfifo $file
 echo "Listening on port $PORT..."
-nc -l -p $PORT <$file | $server &>$file
+nc -v -l -p $PORT <$file | $server &>$file
 rm $file
+echo "done"

@@ -6,4 +6,4 @@ services:
         ports:
             - "10001:80"
         environment:
-            - PORT=80
+            - PORT=8787
