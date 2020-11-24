@@ -2,7 +2,7 @@ service constr
 {
     server = /home/constr/constr
     user = constr
-    port = 443
+    port = 80
 
     disable = no
     type = UNLISTED
