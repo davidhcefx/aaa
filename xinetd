@@ -1,11 +1,12 @@
 service constr
 {
-    disable = no
-    type = UNLISTED
-    wait = no
     server = /home/constr/constr
     user = constr
     port = 80
+
+    disable = no
+    type = UNLISTED
+    wait = no
     socket_type = stream
     protocol = tcp
     flags = REUSE
