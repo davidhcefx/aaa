@@ -1,13 +1,12 @@
 from ubuntu:18.04
-#run apt-get update
-#run apt-get -y upgrade
-#run apt-get -y install xinetd
+run apt-get update
+run apt-get -y upgrade
+run apt-get -y install netcat
+run useradd -m user
 
-#run useradd -m constr
-#add src/constr /home/constr/
-#add src/flag   /home/constr/
-#add xinetd /etc/xinetd.d/
+add src/constr /home/user/
+add src/flag   /home/user/
+add run.sh     /
 
-#user constr
-#cmd ["/usr/sbin/xinetd", "-dontfork"]
-cmd "echo $PORT"
+#user user
+cmd ["/run.sh"]

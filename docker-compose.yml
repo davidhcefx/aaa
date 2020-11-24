@@ -1,7 +1,9 @@
 version: '3'
 services:
-    test_challenge:
-        container_name: test_challenge
+    challenge_test:
+        container_name: challenge_test
         build: .
         ports:
             - "10001:80"
+        environment:
+            - PORT=80
