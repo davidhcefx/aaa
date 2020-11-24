@@ -8,5 +8,5 @@ add src/constr /home/user/
 add src/flag   /home/user/
 add run.sh     /
 
-#user user
+user user
 cmd ["/run.sh"]

@@ -4,6 +4,6 @@ services:
         container_name: challenge_test
         build: .
         ports:
-            - "10001:80"
+            - "10001:8787"
         environment:
             - PORT=8787
