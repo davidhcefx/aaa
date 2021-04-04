@@ -5,6 +5,6 @@
 sudo nano /etc/init.d
 ```
 
-```conf
-EXTRA_OPT=
+```sh
+EXTRA_OPT="a"
 ```
