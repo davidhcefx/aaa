@@ -1,7 +1,7 @@
 # aaa
 
-```bash
-$ sudo nano /etc/init.d
+```shell
+# sudo nano /etc/init.d
 sudo nano /etc/init.d
 ```
 
